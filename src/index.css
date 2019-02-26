@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
+}
+
+body {
+  	margin: 0;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 25vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-image, nav, .bottom-image {
+	flex: 1;
+}
+
+.top-image {
+	background: url(./img/bird.png);
+	background-size: 85%;
+	background-repeat: no-repeat;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-nav {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.bottom-image {
+	background: url(./img/sea.png);
+	background-size: cover;
+}
+
+main {
+	display: flex;
+	width: 75vw;
+	position: absolute;
+    top: 0;
+	right: 0;
+}
+
+.column {
+	height: 100vh;
+	flex: 1;
+}
+
+.portfolio-item {
+	border: 0.4rem solid white;
+	background-color: rebeccapurple;
+}
+
