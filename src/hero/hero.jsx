@@ -13,7 +13,7 @@ export default class Home extends React.Component {
                         <a href="#">KS</a>
                     </div>
                     <nav>
-                        <div className="collapse" id="navbarNavAltMarkup">
+                        <div className="" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
                                 <a className="nav-item" href="#">Home</a>
                                 <a className="nav-item" href="#">Work</a>

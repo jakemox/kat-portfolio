@@ -1,6 +1,7 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
+// import Popper from 'popper.js';
+// import $ from 'jquery';
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
-import $ from 'jquery';
 import React from 'react';
 import { render } from 'react-dom';
 import './index.css';

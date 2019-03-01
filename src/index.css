@@ -53,19 +53,50 @@ nav {
 
 main {
 	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap; 
 	width: 75vw;
+	height: 100vh;
 	position: absolute;
     top: 0;
 	right: 0;
 }
 
-.column {
-	height: 100vh;
-	flex: 1;
-}
-
 .portfolio-item {
 	border: 0.4rem solid white;
-	background-color: rebeccapurple;
+	width: 25vw;
+}
+
+.close-carousel {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+}
+
+.carousel-test {
+	height: 100vh;
+	width: 75vw;
+	position: absolute;
+	left: 0;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-car {
+	height: 400px;
+	width: 100%;
+}
+
+.item-1 {
+	background-color: red; 
+}
+
+.item-2 {
+	background-color: blue; 
+}
+
+.item-3 {
+	background-color: yellow; 
 }
 
