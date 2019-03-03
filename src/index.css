@@ -75,28 +75,50 @@ main {
 
 .carousel-test {
 	height: 100vh;
-	width: 75vw;
+	width: 100vw;
 	position: absolute;
-	left: 0;
+	left: -25vw;
 	display: flex;
     flex-direction: column;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
     justify-content: center;
 }
 
 .item-car {
-	height: 400px;
+	height: 500px;
+	width: 65%;
+}
+
+.carousel-indicators li {
+    width: 7px;
+	height: 7px;
+	border-radius: 50%;
+}
+
+.hvr-fade {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-}
-
-.item-1 {
-	background-color: red; 
-}
-
-.item-2 {
-	background-color: blue; 
-}
-
-.item-3 {
-	background-color: yellow; 
-}
-
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 0);
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	overflow: hidden;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.7s;
+	-webkit-transition-property: color, background-color;
+	transition-property: color, background-color;
+  }
+  .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+  }

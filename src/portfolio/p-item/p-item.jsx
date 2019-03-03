@@ -26,12 +26,15 @@ export default class PItem extends React.Component {
         return (
             <>
                 <div 
-                    className="portfolio-item"
-                    style={{
-                        height: this.props.height + '%',
-                        backgroundColor: this.props.image
-                    }}
-                    onClick={this.action}>
+                className="portfolio-item"
+                style={{
+                    height: this.props.height + '%',
+                    backgroundColor: this.props.image
+                }}
+                onClick={this.action}>
+                    <div className="hvr-fade">
+                        {this.props.image}
+                    </div>
                 </div>
                 <CarouselDisplay
                     showing={this.state.carouselShowing}
